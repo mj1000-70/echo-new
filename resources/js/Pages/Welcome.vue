@@ -1,5 +1,5 @@
 <template>
-    <div class="flex bg-black h-8 grid grid-cols-3 h-20 w-full items-center sticky -top-1.5 border-b-2 border-dotted">
+    <div class="flex bg-black h-8 grid grid-cols-3 h-20 w-full items-center sticky -top-1.5 border-b-2">
         <div class=" text-xl text-white flex p-3">
             <button @click="isOpen=!isOpen"> <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mb-14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
@@ -17,13 +17,13 @@
         <div class="flex justify-end mr-3">
             <ul class="flex h-8 w-7  justify-end space-x-3 text-xl mb-10">
 
-                <li class="bg-white rounded-full"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <li class="bg-white p-2  rounded-full hover:text-blue-400 "><svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
                 </svg></li>
-                <li class="bg-white"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <li class="bg-white p-2  rounded-full hover:text-blue-400"><svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
                 </svg></li>
-                <li class="bg-white"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <li class="bg-white p-2  rounded-full hover:text-blue-400"><svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
                 </svg></li>
             </ul>
@@ -56,24 +56,27 @@
                 </ul>
             </nav>
 
-            <div class="p-8 ml-6">
-                <span><h1 class="text-white text-4xl hover:scale-105 duration-300 transition-all transform">Главная</h1></span>
+            <div class="p-10 ml-8">
+                <span><h1 class="text-white font-bold text-5xl hover:scale-105 duration-300 transition-all transform">Главная</h1></span>
                 <div class="space-x-4 mt-14">
-                   <button  class="text-white uppercase text-lg bg-cyan-500  px-14 py-3 rounded-lg hover:scale-105 duration-300 transition-all transform shadow">МУЗЫКАЛЬНЫЙ ТОП</button>
-                    <button  class="text-white uppercase text-lg bg-amber-500  px-14 py-3 rounded-lg hover:scale-105 duration-300 transition-all transform shadow">S.KHALIL PRODUCTION</button>
+                   <button  class="text-white uppercase text-lg bg-cyan-500  px-14 py-2 rounded-lg hover:scale-105 duration-300 transition-all transform shadow">МУЗЫКАЛЬНЫЙ ТОП</button>
+                    <button  class="text-white uppercase text-lg bg-amber-500  px-14 py-2 rounded-lg hover:scale-105 duration-300 transition-all transform shadow">S.KHALIL PRODUCTION</button>
 
                 </div>
                 <div class="mt-10 flex justify-between">
-                    <span class="text-white text-3xl font-semibold">Слушайте</span>
+                    <span class="text-white uppercase text-xl shadow-white shadow-2xl font-bold">Слушайте</span>
                     <span class="text-white mr-12">больше музыки</span>
                 </div>
 
-                <div class="grid grid-cols-2 mt-8  ">
-                    <div class="space-y-4 px-4">
-                        <audio class="  hover:border-cyan-600 border-2 border-gray-900 w-full hover:shadow-2xl focus:shadow-outline " controls>
-                            <source src="" type="audio/mp3">
-                        </audio>
-                        <audio class="  hover:border-cyan-600 border-2 border-gray-900 w-full " controls>
+                <div class="grid grid-cols-2 mt-8 ">
+                    <div class="space-y-4 ">
+
+                            <audio class="  hover:border-cyan-600 border-2 border-black w-full hover:shadow-inner" controls>
+                                <source src="" type="audio/mpeg">
+                            </audio>
+
+
+                        <audio class="  hover:border-cyan-600 border-2 border-gray-900 w-full drop-shadow-2xl sa " controls>
                             <source src="" type="audio/mp3">
                         </audio>
                         <audio class="  hover:border-cyan-600 border-2 border-gray-900 w-full " controls>
@@ -83,91 +86,91 @@
                             <source src="" type="audio/mp3">
                         </audio>
                     </div>
-                    <div class="space-y-4 px-4"  >
-                        <audio class="  hover:border-blue-900 border-2 border-gray-900 w-full " controls>
+                    <div class="space-y-4"  >
+                        <audio class="  hover:border-cyan-600 border-2 border-gray-900 w-full " controls>
                             <source src="" type="audio/mp3">
                         </audio>
-                        <audio class="  hover:border-blue-900 border-2 border-gray-900 w-full " controls>
+                        <audio class="  hover:border-cyan-600border-2 border-gray-900 w-full " controls>
                             <source src="" type="audio/mp3">
                         </audio>
-                        <audio class="  hover:border-blue-900 border-2 border-gray-900 w-full " controls>
+                        <audio class="  hover:border-cyan-600 border-2 border-gray-900 w-full " controls>
                             <source src="" type="audio/mp3">
                         </audio>
-                        <audio class="  hover:border-blue-900 border-2 border-gray-900 w-full " controls>
+                        <audio class=" hover:border-cyan-600 border-2 border-gray-900 w-full " controls>
                             <source src="" type="audio/mp3">
                         </audio>
                     </div>
                 </div>
 
                 <div class="mt-8">
-                    <span class="text-white text-2xl">Исследуйте</span>
+                    <span class="text-white text-xl font-bold uppercase">Исследуйте</span>
+                    <div class="mt-8 g gap-2 grid grid-cols-6">
+                        <div class="flex flex-col hover:bg-gray-500 z-10">
+                            <video class="w-36 h-56 " controls >
+                                <source src="" type="vide/mp4">
+                            </video>
+                            <span>
+                            <a class="text-lg text-white hover:text-blue-400" href="">Nuriddin Selected Album</a>
+                            <h1 class="text-gray-400">Nuriddin</h1>
+                        </span>
+                        </div>
+
+                        <div class="flex flex-col">
+                            <video class="w-36 h-56" controls >
+                                <source src="" type="vide/mp4">
+                            </video>
+                            <span>
+                            <a class="text-lg text-white hover:text-blue-400" href="">Nuriddin Selected Album</a>
+                            <h1 class="text-gray-400">Nuriddin</h1>
+                        </span>
+                        </div>
+
+                        <div class="flex flex-col">
+                            <video class="w-36 h-56" controls >
+                                <source src="" type="vide/mp4">
+                            </video>
+                            <span>
+                            <a class="text-lg text-white hover:text-blue-400" href="">Nuriddin Selected Album</a>
+                            <h1 class="text-gray-400">Nuriddin</h1>
+                        </span>
+                        </div>
+
+                        <div class="flex flex-col">
+                            <video class="w-36 h-56" controls >
+                                <source src="" type="vide/mp4">
+                            </video>
+                            <span>
+                            <a class="text-lg text-white hover:text-blue-400" href="">Nuriddin Selected Album</a>
+                            <h1 class="text-gray-400">Nuriddin</h1>
+                        </span>
+                        </div>
+
+                        <div class="flex flex-col">
+                            <video class="w-36 h-56" controls >
+                                <source src="" type="vide/mp4">
+                            </video>
+                            <span>
+                            <a class="text-lg text-white hover:text-blue-400" href="">Nuriddin Selected Album</a>
+                            <h1 class="text-gray-400">Nuriddin</h1>
+                        </span>
+                        </div>
+
+                        <div class="flex flex-col">
+                            <video class="w-36 h-56" controls >
+                                <source src="" type="vide/mp4">
+                            </video>
+                            <span>
+                            <a class="text-lg text-white hover:text-blue-400" href="">Nuriddin Selected Album</a>
+                            <h1 class="text-gray-400">Nuriddin</h1>
+                        </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-8">
+                    <span class="text-white text-xl font-bold uppercase">Смотрите</span>
                     <div class="mt-8 g gap-2 grid grid-cols-6 ">
                         <div class="flex flex-col">
-                            <video class="w-36 h-56" controls >
-                                <source src="" type="vide/mp4">
-                            </video>
-                            <span>
-                            <a class="text-lg text-white hover:text-blue-400" href="">Nuriddin Selected Album</a>
-                            <h1 class="text-gray-400">Nuriddin</h1>
-                        </span>
-                        </div>
-
-                        <div class="flex flex-col">
-                            <video class="w-36 h-56" controls >
-                                <source src="" type="vide/mp4">
-                            </video>
-                            <span>
-                            <a class="text-lg text-white hover:text-blue-400" href="">Nuriddin Selected Album</a>
-                            <h1 class="text-gray-400">Nuriddin</h1>
-                        </span>
-                        </div>
-
-                        <div class="flex flex-col">
-                            <video class="w-36 h-56" controls >
-                                <source src="" type="vide/mp4">
-                            </video>
-                            <span>
-                            <a class="text-lg text-white hover:text-blue-400" href="">Nuriddin Selected Album</a>
-                            <h1 class="text-gray-400">Nuriddin</h1>
-                        </span>
-                        </div>
-
-                        <div class="flex flex-col">
-                            <video class="w-36 h-56" controls >
-                                <source src="" type="vide/mp4">
-                            </video>
-                            <span>
-                            <a class="text-lg text-white hover:text-blue-400" href="">Nuriddin Selected Album</a>
-                            <h1 class="text-gray-400">Nuriddin</h1>
-                        </span>
-                        </div>
-
-                        <div class="flex flex-col">
-                            <video class="w-36 h-56" controls >
-                                <source src="" type="vide/mp4">
-                            </video>
-                            <span>
-                            <a class="text-lg text-white hover:text-blue-400" href="">Nuriddin Selected Album</a>
-                            <h1 class="text-gray-400">Nuriddin</h1>
-                        </span>
-                        </div>
-
-                        <div class="flex flex-col">
-                            <video class="w-36 h-56" controls >
-                                <source src="" type="vide/mp4">
-                            </video>
-                            <span>
-                            <a class="text-lg text-white hover:text-blue-400" href="">Nuriddin Selected Album</a>
-                            <h1 class="text-gray-400">Nuriddin</h1>
-                        </span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="mt-8">
-                    <span class="text-white text-2xl">Смотрите</span>
-                    <div class="mt-8 g gap-2 grid grid-cols-6 ">
-                        <div class="flex flex-col">
                             <video class="w-36 h-36" controls >
                                 <source src="" type="vide/mp4">
                             </video>
@@ -224,13 +227,13 @@
                 </div>
 
                 <div class="mt-8">
-                <span class="text-white text-2xl ">Читайте</span>
+                <span class="text-white text-xl font-bold uppercase ">Читайте</span>
                 </div>
                 <div class="mt-4 grid grid-cols-2">
 
                     <div class="gap-2 flex">
 
-                        <div class="flex flex-col">
+                        <div class="flex flex-col hover:scale-105 duration-300 transition-all transform ">
                             <img class=" border-2" src="public/images/png/logo_full_bw.png" width="200" height="250">
                             <span class="text-white text-2xl mt-2">Сборники и альбомы</span>
                             <p class="text-gray-400 space-y-4">
@@ -242,7 +245,7 @@
                               <span class="text-sm"> 09.06.2020 Далер Назаров</span> </p>
                         </div>
 
-                        <div class="flex flex-col">
+                        <div class="flex flex-col hover:scale-105 duration-300 transition-all transform">
                             <img class=" border-2" src="public/images/png/logo_full_bw.png" width="200" height="250">
                             <span class="text-white text-2xl"> О записи</span>
                             <p class="text-gray-400">
