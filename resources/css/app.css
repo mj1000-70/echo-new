@@ -1,6 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
- .card{
-     @apply
+ .nav{
+     @apply space-y-3 py-3 px-4 text-xl text-white bg-black h-screen w-64;
  }
