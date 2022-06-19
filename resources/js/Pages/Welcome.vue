@@ -1,5 +1,5 @@
 <template>
-    <div class="flex bg-black h-8 grid grid-cols-3 h-20 w-full items-center sticky -top-1.5 border-b-2">
+    <div class="flex bg-black h-8 lg:grid grid-cols-3  h-20 w-full items-center sticky -top-1.5 border-b-2">
         <div class=" text-xl text-white flex p-3">
             <button @click="isOpen=!isOpen"> <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mb-14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
@@ -14,7 +14,7 @@
             <span> <a class="text-xl text-white hover:text-blue-600 " href="">Войти</a> </span>
         </div>
 
-        <div class="flex justify-end mr-3">
+        <div class="flex justify-end mr-3 ">
             <ul class="flex h-8 w-7  justify-end space-x-3 text-xl mb-10">
 
                 <li class="bg-white p-2  rounded-full hover:text-blue-400 "><svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -33,10 +33,10 @@
     <section>
         <div class="bg-black">
             <nav :class="isOpen ? 'block' : 'hidden' ">
-                <ul class="nav">
-                <span class="flex space-x-3"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <ul class="nav ml-3">
+                <span class="flex space-x-1 "><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-12 border-l-2  border-l-blue-500 pl-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
   <path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-</svg> <a href=""> Главная</a>
+</svg> <a class="" href=""> Главная</a>
                 </span>
 
                     <span class="flex space-x-3 hover:text-blue-600"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -58,20 +58,20 @@
 
             <div class="p-10 ml-8">
                 <span><h1 class="text-white font-bold text-5xl hover:scale-105 duration-300 transition-all transform">Главная</h1></span>
-                <div class="space-x-4 mt-14">
-                   <button  class="text-white uppercase text-lg bg-cyan-500  px-14 py-2 rounded-lg hover:scale-105 duration-300 transition-all transform shadow">МУЗЫКАЛЬНЫЙ ТОП</button>
-                    <button  class="text-white uppercase text-lg bg-amber-500  px-14 py-2 rounded-lg hover:scale-105 duration-300 transition-all transform shadow">S.KHALIL PRODUCTION</button>
-
+                <div class="md:flex-col space-y-4 lg:space-x-4 mt-14">
+                   <button  class="text-white uppercase text-lg bg-cyan-500   px-16 md:py-0 lg:py-2 rounded-lg hover:scale-105 duration-300 transition-all transform shadow">МУЗЫКАЛЬНЫЙ ТОП</button>
+                    <button  class="text-white uppercase text-lg bg-amber-500  px-14 md:py-0 lg:py-2 rounded-lg hover:scale-105 duration-300 transition-all transform shadow">S.KHALIL PRODUCTION</button>
                 </div>
+
                 <div class="mt-10 flex justify-between">
                     <span class="text-white uppercase text-xl shadow-white shadow-2xl font-bold">Слушайте</span>
                     <span class="text-white mr-12">больше музыки</span>
                 </div>
 
-                <div class="grid grid-cols-2 gap-x-0 mt-8">
-                    <div class="space-y-4 grid w-11/12">
+                <div class="grid md:grid-cols-1 lg:grid-cols-2 gap-x-0 mt-8">
+                    <div class="space-y-4 grid w-11/12 rounded-sm">
 
-                            <audio class="  hover:border-cyan-600 border-2 border-black w-full hover:shadow-inner" controls>
+                            <audio class="  hover:border-cyan-600 border-2 border-black w-full hover:shadow-xl" controls>
                                 <source src="" type="audio/mpeg">
                             </audio>
 
@@ -104,7 +104,7 @@
 
                 <div class="mt-8">
                     <span class="text-white text-xl font-bold uppercase">Исследуйте</span>
-                    <div class="mt-8 g gap-2 grid grid-cols-6">
+                    <div class="mt-8 g gap-2 grid md:grid-cols-1 lg:grid-cols-6">
                         <div class="flex flex-col hover:bg-gray-500 z-10">
                             <video class="w-36 h-56 " controls >
                                 <source src="" type="vide/mp4">
@@ -169,7 +169,7 @@
 
                 <div class="mt-8">
                     <span class="text-white text-xl font-bold uppercase">Смотрите</span>
-                    <div class="mt-8 g gap-2 grid grid-cols-6 ">
+                    <div class="mt-8 g gap-2 grid md:grid-cols-1 lg:grid-cols-6 ">
                         <div class="flex flex-col">
                             <video class="w-36 h-36" controls >
                                 <source src="" type="vide/mp4">
@@ -229,9 +229,9 @@
                 <div class="mt-8">
                 <span class="text-white text-xl font-bold uppercase ">Читайте</span>
                 </div>
-                <div class="mt-4 grid grid-cols-2">
+                <div class="mt-4 grid  lg:grid-cols-2">
 
-                    <div class="gap-2 flex">
+                    <div class="gap-2 md:flex-col lg:flex space-y-1 ">
 
                         <div class="flex flex-col hover:scale-105 duration-300 transition-all transform ">
                             <img class=" border-2" src="public/images/png/logo_full_bw.png" width="200" height="250">
