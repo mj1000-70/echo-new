@@ -68,8 +68,8 @@
                     <span class="text-white mr-12">больше музыки</span>
                 </div>
 
-                <div class="grid grid-cols-2 mt-8 ">
-                    <div class="space-y-4 ">
+                <div class="grid grid-cols-2 gap-x-0 mt-8">
+                    <div class="space-y-4 grid w-11/12">
 
                             <audio class="  hover:border-cyan-600 border-2 border-black w-full hover:shadow-inner" controls>
                                 <source src="" type="audio/mpeg">
@@ -86,11 +86,11 @@
                             <source src="" type="audio/mp3">
                         </audio>
                     </div>
-                    <div class="space-y-4"  >
+                    <div class="space-y-4 w-11/12"  >
                         <audio class="  hover:border-cyan-600 border-2 border-gray-900 w-full " controls>
                             <source src="" type="audio/mp3">
                         </audio>
-                        <audio class="  hover:border-cyan-600border-2 border-gray-900 w-full " controls>
+                        <audio class="  hover:border-cyan-600 border-2 border-gray-900 w-full " controls>
                             <source src="" type="audio/mp3">
                         </audio>
                         <audio class="  hover:border-cyan-600 border-2 border-gray-900 w-full " controls>
