@@ -4,3 +4,6 @@
  .nav{
      @apply space-y-3 py-3 px-4 text-xl text-white bg-black h-screen w-64;
  }
+ .btn{
+     @apply text-white uppercase text-lg bg-cyan-500   px-16 md:py-0 lg:py-2 rounded-lg hover:scale-105 duration-300 transition-all transform shadow
+ }

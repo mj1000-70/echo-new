@@ -58,9 +58,9 @@
 
             <div class="p-10 ml-8">
                 <span><h1 class="text-white font-bold text-5xl hover:scale-105 duration-300 transition-all transform">Главная</h1></span>
-                <div class="md:flex-col space-y-4 lg:space-x-4 mt-14">
-                   <button  class="text-white uppercase text-lg bg-cyan-500   px-16 md:py-0 lg:py-2 rounded-lg hover:scale-105 duration-300 transition-all transform shadow">МУЗЫКАЛЬНЫЙ ТОП</button>
-                    <button  class="text-white uppercase text-lg bg-amber-500  px-14 md:py-0 lg:py-2 rounded-lg hover:scale-105 duration-300 transition-all transform shadow">S.KHALIL PRODUCTION</button>
+                <div class="md:flex-col space-y-4 lg:space-x-6 mt-14 mix-blend-">
+                   <button  class="btn bg-gradient-to-tr from-cyan-400 to-fuchsia-600 ">МУЗЫКАЛЬНЫЙ ТОП</button>
+                    <button  class=" bg-gradient-to-r from-purple-500 to-amber-400 text-white uppercase text-lg bg-amber-500  px-14 md:py-0 lg:py-2 rounded-lg hover:scale-105 duration-300 transition-all transform shadow">S.KHALIL PRODUCTION</button>
                 </div>
 
                 <div class="mt-10 flex justify-between">
@@ -75,28 +75,27 @@
                                 <source src="" type="audio/mpeg">
                             </audio>
 
-
-                        <audio class="  hover:border-cyan-600 border-2 border-gray-900 w-full drop-shadow-2xl sa " controls>
+                        <audio class="  hover:border-cyan-600 border-2 border-black w-full hover:shadow-inner shadow-2xl " controls>
                             <source src="" type="audio/mp3">
                         </audio>
-                        <audio class="  hover:border-cyan-600 border-2 border-gray-900 w-full " controls>
+                        <audio class="  hover:border-cyan-600 border-2 border-black w-full  hover:shadow-inner shadow-2xl" controls>
                             <source src="" type="audio/mp3">
                         </audio>
-                        <audio class="  hover:border-cyan-600 border-2 border-gray-900 w-full  shadow-cyan-400 drop-shadow-2xl " controls>
+                        <audio class="  hover:border-cyan-600 border-2 border-black w-full  hover:shadow-inner shadow-2xl" controls>
                             <source src="" type="audio/mp3">
                         </audio>
                     </div>
                     <div class="space-y-4 w-11/12"  >
-                        <audio class="  hover:border-cyan-600 border-2 border-gray-900 w-full " controls>
+                        <audio class="  hover:border-cyan-600 border-2 border-black hover:shadow-inner shadow-2xl w-full " controls>
                             <source src="" type="audio/mp3">
                         </audio>
-                        <audio class="  hover:border-cyan-600 border-2 border-gray-900 w-full " controls>
+                        <audio class="  hover:border-cyan-600 border-2 border-black hover:shadow-inner shadow-2xl w-full " controls>
                             <source src="" type="audio/mp3">
                         </audio>
-                        <audio class="  hover:border-cyan-600 border-2 border-gray-900 w-full " controls>
+                        <audio class="  hover:border-cyan-600 border-2 border-black hover:shadow-inner shadow-2xl w-full " controls>
                             <source src="" type="audio/mp3">
                         </audio>
-                        <audio class=" hover:border-cyan-600 border-2 border-gray-900 w-full " controls>
+                        <audio class=" hover:border-cyan-600 border-2 border-black hover:shadow-inner shadow-2xl w-full " controls>
                             <source src="" type="audio/mp3">
                         </audio>
                     </div>
@@ -104,10 +103,10 @@
 
                 <div class="mt-8">
                     <span class="text-white text-xl font-bold uppercase">Исследуйте</span>
-                    <div class="mt-8 g gap-2 grid md:grid-cols-1 lg:grid-cols-6">
-                        <div class="flex flex-col hover:bg-gray-500 z-10">
-                            <video class="w-36 h-56 " controls >
-                                <source src="" type="vide/mp4">
+                    <div class="mt-8 g gap-2 grid md:grid-cols-1 lg:grid-cols-6 ">
+                        <div class="flex flex-col">
+                            <video class="w-36 h-56 hover:mix-blend-normal bg-gray-400 bg-opacity-80 mix-blend-soft-light " controls >
+                                <source src="" type="video/mp4">
                             </video>
                             <span>
                             <a class="text-lg text-white hover:text-blue-400" href="">Nuriddin Selected Album</a>
@@ -229,26 +228,28 @@
                 <div class="mt-8">
                 <span class="text-white text-xl font-bold uppercase ">Читайте</span>
                 </div>
-                <div class="mt-4 grid  lg:grid-cols-2">
 
-                    <div class="gap-2 md:flex-col lg:flex space-y-1 ">
+                <div class="mt-4 grid  space-x-6 lg:grid-cols-4 ">
+
+                    <div class="flex flex-col hover:scale-105 duration-300 transition-all transform ">
+                            <img class=" border-2" src="public/images/png/logo_full_bw.png" width="200" height="250">
+                            <span class="text-white text-2xl mt-2">Сборники и альбомы</span>
+                                 <p class="text-gray-400 space-y-4 text-md">
+                                Далер Назаров рассказывает об
+                                истории своих первых неофициальных
+                                альбомов, о важности соблюдения
+                                хронологического порядкаи
+                                разниe между тематическим
+                                альбомом и сборником.
+                                <span class="text-sm"> 09.06.2020 Далер Назаров</span> </p>
+
+
+                        </div>
 
                         <div class="flex flex-col hover:scale-105 duration-300 transition-all transform ">
                             <img class=" border-2" src="public/images/png/logo_full_bw.png" width="200" height="250">
-                            <span class="text-white text-2xl mt-2">Сборники и альбомы</span>
-                            <p class="text-gray-400 space-y-4">
-                                Далер Назаров рассказывает об истории
-                                своих первых неофициальных альбомов,
-                                о важности соблюдения хронологического порядка
-                                и разнице между тематическим альбомом и сборником.
-
-                              <span class="text-sm"> 09.06.2020 Далер Назаров</span> </p>
-                        </div>
-
-                        <div class="flex flex-col hover:scale-105 duration-300 transition-all transform">
-                            <img class=" border-2" src="public/images/png/logo_full_bw.png" width="200" height="250">
-                            <span class="text-white text-2xl"> О записи</span>
-                            <p class="text-gray-400">
+                            <span class="text-white text-2xl mt-2"> О записи</span>
+                            <p class="text-gray-400 w-72 text-md">
 
                                 Сегодня для нас ценно схваченное мгновение,
                                 в котором ещё не остыло состояние, принесённое
@@ -256,14 +257,12 @@
                                 фиксировать, это и будет её единственный след.
                                 <span class="text-sm"> 13.07.2020 Далер Назаров 0:00</span> </p>
                         </div>
-
-                    </div>
                 </div>
 
 
             </div>
         </div>
-        <audio class="sticky -top-1.5" controls>
+        <audio class="sticky -bottom-1.5" controls>
             <source src="horse.ogg" type="audio/ogg">
             <source src="horse.mp3" type="audio/mpeg">
         </audio>
