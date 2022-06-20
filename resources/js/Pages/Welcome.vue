@@ -5,7 +5,7 @@
                 <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
             </svg></button>
 
-            <a class="ml-3 mt-5" href=""><img src="public/images/png/logo_full_bw.png" width="100" height="100"> </a>
+            <a class="ml-3 mt-5" href=""><img class="" src="public/images/png/logo_full_bw.png" width="100" height="100"> </a>
             <span class="mx-auto mt-4"><input class="rounded-full bg-gray-800 text-gray-300 py-0" type="search" placeholder="trek, albom, artist"></span>
 
         </div>
@@ -105,7 +105,7 @@
                     <span class="text-white text-xl font-bold uppercase">Исследуйте</span>
                     <div class="mt-8 g gap-2 grid md:grid-cols-1 lg:grid-cols-6 ">
                         <div class="flex flex-col">
-                            <video class="w-36 h-56 hover:mix-blend-normal bg-gray-400 bg-opacity-80 mix-blend-soft-light " controls >
+                            <video class="w-36 h-56  bg-gray-400 bg-opacity-80  " controls >
                                 <source src="" type="video/mp4">
                             </video>
                             <span>
