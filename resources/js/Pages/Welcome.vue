@@ -57,7 +57,7 @@
             </nav>
 
             <div class="p-10 ml-8">
-                <span><h1 class="text-white font-bold text-5xl hover:scale-105 duration-300 transition-all transform">Главная</h1></span>
+                <span><h1 class="text-white font-bold text-4xl">Главная</h1></span>
                 <div class="md:flex-col space-y-4 lg:space-x-6 mt-14 mix-blend-">
                    <button  class="btn bg-gradient-to-tr from-cyan-400 to-fuchsia-600 ">МУЗЫКАЛЬНЫЙ ТОП</button>
                     <button  class=" bg-gradient-to-r from-purple-500 to-amber-400 text-white uppercase text-lg bg-amber-500  px-14 md:py-0 lg:py-2 rounded-lg hover:scale-105 duration-300 transition-all transform shadow">S.KHALIL PRODUCTION</button>
