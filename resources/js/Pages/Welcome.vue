@@ -65,7 +65,7 @@
 
                 <div class="mt-10 flex justify-between">
                     <span class="text-white uppercase text-xl shadow-white shadow-2xl font-bold">Слушайте</span>
-                    <span class="text-white mr-12">больше музыки</span>
+                    <a class="text-white mr-12 hover:text-blue-600" href="">больше музыки </a>
                 </div>
 
                 <div class="grid md:grid-cols-1 lg:grid-cols-2 gap-x-0 mt-8">
@@ -102,7 +102,10 @@
                 </div>
 
                 <div class="mt-8">
-                    <span class="text-white text-xl font-bold uppercase">Исследуйте</span>
+                    <div class="mt-10 flex justify-between">
+                        <span class="text-white uppercase text-xl shadow-white shadow-2xl font-bold">Исследуйте</span>
+                        <a class="text-white mr-12 hover:text-blue-600" href="">больше альбомов</a>
+                    </div>
                     <div class="mt-8 g gap-2 grid md:grid-cols-1 lg:grid-cols-6 ">
                         <div class="flex flex-col">
                             <video class="w-36 h-56  bg-gray-400 bg-opacity-80  " controls >
@@ -167,7 +170,10 @@
                 </div>
 
                 <div class="mt-8">
-                    <span class="text-white text-xl font-bold uppercase">Смотрите</span>
+                    <div class="mt-10 flex justify-between">
+                        <span class="text-white uppercase text-xl shadow-white shadow-2xl font-bold">Смотрите</span>
+                        <a class="text-white mr-12 hover:text-blue-600" href="">больше клипов</a>
+                    </div>
                     <div class="mt-8 g gap-2 grid md:grid-cols-1 lg:grid-cols-6 ">
                         <div class="flex flex-col">
                             <video class="w-36 h-36" controls >
@@ -226,7 +232,10 @@
                 </div>
 
                 <div class="mt-8">
-                <span class="text-white text-xl font-bold uppercase ">Читайте</span>
+                    <div class="mt-10 flex justify-between">
+                        <span class="text-white uppercase text-xl shadow-white shadow-2xl font-bold">Читайте</span>
+                        <a class="text-white mr-12 hover:text-blue-600" href="">больше статей</a>
+                    </div>
                 </div>
 
                 <div class="mt-4 grid  space-x-6 lg:grid-cols-4 ">
