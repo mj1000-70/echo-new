@@ -35,42 +35,42 @@
             <nav :class="isOpen ? 'block' : 'hidden' ">
                 <ul class="nav ">
                 <span class="flex space-x-1 "><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-12 border-l-2  border-l-blue-500 pl-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-  <path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-</svg> <a href=""> Главная</a>
+               <path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                </svg> <a href="/blog"> Главная</a>
                 </span>
 
-                    <span class="flex space-x-3 hover:text-blue-600"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <inertia-link :href="route('blog')">
+                    <span class="flex gap-2 hover:text-blue-600"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2" />
-                   </svg> <a href="">Блог</a>
-                    </span>
+                   </svg>Блог</span>
+                    </inertia-link>
 
                     <span class="flex space-x-3 hover:text-blue-600"> <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
-                </svg> <li> Песни</li></span>
+                    </svg> <li> Песни</li></span>
 
                     <li class="hover:text-blue-600"> Альбомы</li>
                     <li class="hover:text-blue-600">Исполнители</li>
-                    <span class="flex space-x-3 hover:text-blue-600"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-  <path stroke-linecap="round" stroke-linejoin="round" d="M7 4v16M17 4v16M3 8h4m10 0h4M3 12h18M3 16h4m10 0h4M4 20h16a1 1 0 001-1V5a1 1 0 00-1-1H4a1 1 0 00-1 1v14a1 1 0 001 1z" />
-</svg><li>Видеo</li></span>
+                    <span class="flex space-x-3 hover:text-blue-600"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M7 4v16M17 4v16M3 8h4m10 0h4M3 12h18M3 16h4m10 0h4M4 20h16a1 1 0 001-1V5a1 1 0 00-1-1H4a1 1 0 00-1 1v14a1 1 0 001 1z" />
+                    </svg><li>Видеo</li></span>
 
                 </ul>
             </nav>
 
-            <div class="p-10 ml-8">
-                <span><h1 class="text-white font-bold text-4xl">Главная</h1></span>
+            <div class="p-10  inline-block space-x-10">
+                <span><h1 class="text-white font-bold text-4xl px-10 ">Главная</h1></span>
                 <div class="md:flex-col space-y-4 lg:space-x-6 mt-14 mix-blend-">
                    <button  class="btn bg-gradient-to-tr from-cyan-400 to-fuchsia-600 ">МУЗЫКАЛЬНЫЙ ТОП</button>
                     <button  class=" bg-gradient-to-r from-purple-500 to-amber-400 text-white uppercase text-lg bg-amber-500  px-14 md:py-0 lg:py-2 rounded-lg hover:scale-105 duration-300 transition-all transform shadow">S.KHALIL PRODUCTION</button>
                 </div>
 
-                <div class="my-8 flex justify-between">
+                <div class="py-8 flex justify-between">
                     <span class="text-white uppercase text-xl shadow-white shadow-2xl font-bold">Слушайте</span>
                     <a class="text-white mr-12 hover:text-blue-600" href="">больше музыки </a>
                 </div>
 
-                <div class="grid md:grid-cols-1 lg:grid-cols-2 gap-x-0 mt-8">
-                    <div class="space-y-4 grid w-11/12 rounded-sm">
+                <div class="grid md:grid-cols-1 lg:grid-cols-2 ">
+                    <div class="space-y-4  w-11/12 ">
 
                             <audio class="  hover:border-cyan-600 border-2 border-black w-full hover:shadow-xl" controls>
                                 <source src="" type="audio/mpeg">
@@ -102,14 +102,14 @@
                     </div>
                 </div>
 
-                <div class="space-y-10">
-                    <div class="my-10 flex justify-between">
+                <div>
+                    <div class="py-8 flex justify-between">
                         <span class="text-white uppercase text-xl shadow-white shadow-2xl font-bold">Исследуйте</span>
-                        <a class="text-white mr-12 hover:text-blue-600" href="">больше альбомов</a>
+                        <a class="text-white  hover:text-blue-600" href="">больше альбомов</a>
                     </div>
                     <div class=" gap-2 grid md:grid-cols-1 lg:grid-cols-6 ">
                         <div class="flex flex-col">
-                            <video class="w-36 h-48  bg-gray-400 bg-opacity-80 rounded-md " controls >
+                            <video class="w-36 h-48  rounded-md " controls >
                                 <source src="" type="video/mp4">
                             </video>
                             <span>
@@ -170,8 +170,8 @@
                     </div>
                 </div>
 
-                <div class="space-y-10">
-                    <div class="flex justify-between my-8">
+                <div>
+                    <div class="flex justify-between py-8">
                         <span class="text-white uppercase text-xl shadow-white shadow-2xl font-bold">Смотрите</span>
                         <a class="text-white mr-12 hover:text-blue-600" href="">больше клипов</a>
                     </div>
@@ -232,8 +232,8 @@
                     </div>
                 </div>
 
-                <div class="space-y-10">
-                    <div class="my-8 flex justify-between">
+                <div>
+                    <div class="py-8 flex justify-between">
                         <span class="text-white uppercase text-xl shadow-white shadow-2xl font-bold">Читайте</span>
                         <a class="text-white mr-12 hover:text-blue-600" href="">больше статей</a>
                     </div>
@@ -285,12 +285,14 @@
  <Contastants>
 
  </Contastants>
-    <router-view>
+    <div id="nav">
+        <router-link to="/blog">Blog</router-link>
+        <router-view/>
+    </div>
 
-    </router-view>
-  <router-link :to="{name:'Blog'}">
 
-  </router-link>
+
+
 </template>
 
 <script>

@@ -33,3 +33,11 @@ Route::middleware([
         return Inertia::render('Dashboard');
     })->name('dashboard');
 });
+
+Route::get('/blog', function () {
+    return Inertia::render('Blog');
+})->name('blog');
+
+Route::get('/blog', function () {
+    return Inertia::render('Blog');
+})->name('blog');
