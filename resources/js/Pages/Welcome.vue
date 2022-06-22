@@ -285,6 +285,12 @@
  <Contastants>
 
  </Contastants>
+    <router-view>
+
+    </router-view>
+  <router-link :to="{name:'Blog'}">
+
+  </router-link>
 </template>
 
 <script>

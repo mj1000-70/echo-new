@@ -1,5 +1,5 @@
 <template>
-    <div class=" bg-gray-900 space-x-3 px-14">
+    <div class=" bg-black space-x-3 px-14">
         <div class=" space-x-3 my-8 flex justify-between">
             <span class="text-white text-4xl shadow-white font-bold">Альбомы</span>
         </div>
