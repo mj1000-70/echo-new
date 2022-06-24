@@ -1,5 +1,5 @@
 <template>
-    <div class="flex bg-black h-8 lg:grid grid-cols-3  h-20 w-full items-center sticky -top-1.5 border-b-2">
+    <div class="flex bg-black h-8 lg:grid grid-cols-3  h-20 w-full items-center sticky -top-1.5 border-b border-gray-300">
         <div class=" text-xl text-white flex p-3">
             <button class="my-4" @click="isOpen=!isOpen"> <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mb-14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
@@ -105,7 +105,7 @@
                 <div>
                     <div class="py-8 flex justify-between">
                         <span class="text-white uppercase text-xl shadow-white shadow-2xl font-bold">Исследуйте</span>
-                        <a class="text-white  hover:text-blue-600" href="">больше альбомов</a>
+                        <a class="text-white  hover:text-blue-600 mr-12" href="">больше альбомов</a>
                     </div>
                     <div class=" gap-2 grid md:grid-cols-1 lg:grid-cols-6 ">
                         <div class="flex flex-col">
@@ -272,34 +272,54 @@
 
             </div>
         </div>
+
         <audio class="sticky -bottom-1.5 w-full" controls>
             <source src="horse.ogg" type="audio/ogg">
             <source src="horse.mp3" type="audio/mpeg">
         </audio>
     </section>
 
-<Blog>
 
-</Blog>
 
  <Contastants>
 
  </Contastants>
-    <div id="nav">
-        <router-link to="/blog">Blog</router-link>
-        <router-view/>
-    </div>
+
+    <Albums>
+
+    </Albums>
+
+    <Blog>
+
+    </Blog>
+
+    <Songs>
+
+    </Songs>
+
+  <Video>
+
+  </Video>
+
 
 
 
 
 </template>
 
+<div id="nav">
+<router-link to="/blog">Blog</router-link>
+<router-view/>
+</div>
 <script>
-import Blog from  "./Blog";
 import Contastants from "./Contastants";
+import Albums from "./Albums";
+import Blog from "./Blog";
+import Songs from "./Songs";
+import Video from "./Video";
+
 export default {
-    components: {Contastants, Blog},
+    components: {Songs, Contastants, Albums, Blog, Video},
     data(){
         return{
            isOpen:false,
